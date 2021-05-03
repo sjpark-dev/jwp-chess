@@ -27,6 +27,10 @@ dependencies {
 
     runtimeOnly 'mysql:mysql-connector-java'
     runtimeOnly 'com.h2database:h2'
+
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
+    implementation("org.springframework.cloud:spring-cloud-starter-aws:2.2.1.RELEASE")
+    implementation("io.micrometer:micrometer-registry-cloudwatch")
 }
 
 test {
